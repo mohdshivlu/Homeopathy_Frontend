@@ -1,0 +1,89 @@
+.admin-medicines {
+  width: 100%;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.form-card {
+  max-width: 900px;
+}
+
+.medicines-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.medicine-item {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.medicine-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.medicine-info h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.prakriti-badge {
+  display: inline-block;
+  background-color: var(--primary-light);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.rog-name {
+  color: var(--text-dark);
+  font-weight: 500;
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.shakti {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.medicine-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .medicine-item {
+    flex-direction: column;
+  }
+
+  .medicine-actions {
+    width: 100%;
+  }
+
+  .medicine-actions button {
+    flex: 1;
+  }
+}
+

@@ -1,0 +1,136 @@
+.admin-layout {
+  min-height: 100vh;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-nav {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.admin-nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.admin-nav h2 {
+  color: white;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.admin-nav-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.admin-nav-links a {
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.admin-nav-links a:hover,
+.admin-nav-links a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.admin-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.admin-footer {
+  background-color: var(--primary-dark);
+  color: white;
+  padding: 1.5rem 0;
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.admin-footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.admin-footer p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+}
+
+.admin-footer .developer-credit {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 0.8;
+}
+
+.admin-footer-email {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.admin-footer-email:hover {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .admin-nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-nav h2 {
+    font-size: 1.3rem;
+  }
+
+  .admin-nav-links {
+    width: 100%;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .admin-nav-links a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .admin-main {
+    padding: 1.5rem 1rem;
+  }
+
+  .admin-footer {
+    padding: 1rem 0;
+  }
+
+  .admin-footer p,
+  .admin-footer .developer-credit {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+}
+

@@ -1,0 +1,115 @@
+.choose-and-use {
+  padding: 2rem 0;
+  min-height: calc(100vh - 200px);
+}
+
+.choose-and-use h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filter-group label {
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.medicines-count {
+  margin-bottom: 1.5rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.medicines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.medicine-card {
+  display: block;
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  border-left: 4px solid var(--primary-color);
+}
+
+.medicine-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px var(--shadow-hover);
+  border-left-color: var(--primary-dark);
+}
+
+.medicine-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.medicine-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.prakriti-badge {
+  display: inline-block;
+  background-color: var(--primary-light);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  width: fit-content;
+}
+
+.rog-name {
+  color: var(--text-dark);
+  font-weight: 500;
+  margin: 0.5rem 0 0 0;
+}
+
+.shakti {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.no-medicines {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .filters {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .medicines-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+

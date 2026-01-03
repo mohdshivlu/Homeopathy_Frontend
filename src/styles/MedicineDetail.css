@@ -1,0 +1,120 @@
+.medicine-detail {
+  padding: 2rem 0;
+  min-height: calc(100vh - 200px);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.medicine-content {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--white);
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.medicine-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--border);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.medicine-header h1 {
+  color: var(--primary-color);
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.prakriti-badge-large {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.medicine-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.medicine-section {
+  padding: 1.5rem;
+  background-color: var(--background);
+  border-radius: 6px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.medicine-section h3 {
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.medicine-section p {
+  color: var(--text-dark);
+  line-height: 1.8;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.related-medicines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.related-medicines div {
+  padding: 0.75rem;
+  background-color: var(--white);
+  border-radius: 4px;
+  color: var(--text-dark);
+}
+
+.related-medicines strong {
+  color: var(--primary-color);
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .medicine-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .medicine-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .medicine-header h1 {
+    font-size: 2rem;
+  }
+
+  .medicine-section {
+    padding: 1rem;
+  }
+
+  .medicine-section h3 {
+    font-size: 1.1rem;
+  }
+}
+
